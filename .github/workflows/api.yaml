@@ -26,9 +26,9 @@ jobs:
       uses: SonarSource/sonarcloud-github-action@v1.3
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    - uses: actions/checkout@v2
       with:
         projectBaseDir: api
-    - uses: actions/checkout@v2
 
   build:
     runs-on: ubuntu-latest
