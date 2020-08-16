@@ -24,11 +24,11 @@ jobs:
     steps:
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@v1.3
-    - uses: actions/checkout@v2
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         projectBaseDir: api
+    - uses: actions/checkout@v2
 
   build:
     runs-on: ubuntu-latest
