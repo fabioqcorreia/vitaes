@@ -19,6 +19,13 @@ defaults:
     working-directory: ./storage
 
 jobs:
+  static_analysis:
+    runs-on: ubuntu-latest
+    steps:
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v1.3
+      with:
+        projectBaseDir: storage
   build:
     runs-on: ubuntu-latest
     steps:
