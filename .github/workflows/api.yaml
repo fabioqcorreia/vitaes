@@ -29,6 +29,9 @@ jobs:
     - uses: actions/checkout@v2
       with:
         projectBaseDir: api
+        projectKey: vitaes-api
+        projectName: vitaes-api
+        organization: fabioqcorreia
 
   build:
     runs-on: ubuntu-latest
