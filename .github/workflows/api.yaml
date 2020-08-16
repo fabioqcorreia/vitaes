@@ -29,9 +29,6 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         projectBaseDir: api
-        projectKey: vitaes-api
-        projectName: vitaes-api
-        organization: fabioqcorreia
 
   build:
     runs-on: ubuntu-latest
