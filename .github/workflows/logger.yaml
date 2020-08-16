@@ -22,11 +22,11 @@ jobs:
   static_analysis:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@v1.3
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-    - uses: actions/checkout@v2
       with:
         projectBaseDir: logger
         projectKey: vitaes-logger
