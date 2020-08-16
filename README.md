@@ -18,10 +18,10 @@ To work with this project you will need:
 - golang (optional. Get it if you plan to make big changes on any of the golang services. Used v1.12.4)
 
 ##### Production only requirements
-- [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-- [kubectl-aliases](https://github.com/ahmetb/kubectl-aliases) (**PLEASE READ CAREFULY**)
-- [linkerd](https://linkerd.io/2/getting-started/)
-- [doctl](https://github.com/digitalocean/doctl)
+- [kubectl]
+- [kubectl-aliases] (**PLEASE READ CAREFULY**)
+- [linkerd]
+- [doctl]
 
 ## Running the project
 
@@ -54,3 +54,8 @@ Releases are made in random times, the server is currently running on [vitaes.io
 
 ## Notes
 In order to enable hot reloading for the webapp while developing in Windows, you need to change the `vitaes-webapp/package.json` start script to `CHOKIDAR_USEPOLLING=true react-scripts start`.
+
+[kubectl]: https://kubernetes.io/docs/tasks/tools/install-kubectl/
+[kubectl-aliases]: https://github.com/ahmetb/kubectl-aliases
+[linkerd]: https://linkerd.io/2/getting-started/
+[doctl]: https://github.com/digitalocean/doctl
